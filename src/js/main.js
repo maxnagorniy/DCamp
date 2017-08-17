@@ -5,7 +5,13 @@ $(document).ready(function() {
 
 
     $('.menu-open').click(function () {
-        $('.menu-list').toggle(300);
+        $('.menu-list').slideToggle(300);
+    });
+
+    $(window).resize(function () {
+        if ($(window).width > 768 ){
+            $('.menu-list').removeAttr('style');
+        }
     })
 
 });
