@@ -1,0 +1,33 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Главная')
+    include pug/styles.pug
+  body
+    include pug/svg.pug
+
+
+      section.banner
+        div.container
+          nav.menu
+            button.menu-open(type="button") ------
+            ul.menu-list
+              li
+                a(href="#") Book A
+              li
+                a(href="#") Book B
+              li
+                a(href="#") Book C
+              li
+                a(href="#") Book D
+
+          h1.banner-text DISCOVERY CAMP DISCOVERY CAMP DISCOVERY CAMP
+
+
+
+
+    include pug/scripts.pug
