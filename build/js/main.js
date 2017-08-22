@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // Если в проекте используются встроенные js-плагины от Foundation, разкомментировать
-    // $(document).foundation();
+    //$(document).foundation();
 
 
     $('.menu-open').click(function () {
@@ -9,8 +9,8 @@ $(document).ready(function() {
     });
 
     $(window).resize(function () {
-        if ($(window).width > 768 ){
-            $('.menu-list').removeAttr('style');
+        if ($(window).width < 768 ){
+            $('.menu-list').removeAttr("style");
         }
     })
 
